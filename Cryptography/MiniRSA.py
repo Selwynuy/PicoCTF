@@ -41,3 +41,6 @@ while True:
     break
   print(k)
   k += 1
+
+
+# FLAG: picoCTF{e_sh0u1d_b3_lArg3r_7adb35b1}

@@ -1,7 +1,8 @@
-"""
-Description
-What if d is too small? Connect with nc mercury.picoctf.net 37455.
-"""
+# Dachshund Attacks
+## Description
+What if d is too small? Connect with nc mercury.picoctf.net 37455
+## Solution
+```
 import owiener
 import binascii
 
@@ -16,8 +17,9 @@ else:
     print("Hacked d= {}".format(d))
   
 # Hacked d = 8172742463960389538138637375504451509246167366230778210873959967919263359157
-
-# now that we got d, we can solve for m in c = pow(m,e,n) --> m = pow(c,d,n)
+```
+now that we got d, we can solve for m in c = pow(m,e,n) --> m = pow(c,d,n)
+```
 m = pow(c,d,n)
 print("Decrypted message: ",m)    # 198614235373674103788888306985643587194108045477674049828439422174745801853
 
@@ -29,5 +31,5 @@ print("Hex: ", hex_string)                 # 7069636f4354467b70726f76696e675f776
 bytes_object = bytes.fromhex(hex_string)
 flag = bytes_object.decode('utf-8')
 print(flag)
-
-#FLAG: picoCTF{proving_wiener_3878674}
+```
+FLAG: picoCTF{proving_wiener_3878674}

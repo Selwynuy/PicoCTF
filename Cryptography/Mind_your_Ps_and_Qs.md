@@ -1,7 +1,8 @@
-"""
-Description:
+# Mind your Ps and Qs
+## Description
 In RSA, a small e value can be problematic, but what about N? Can you decrypt this? values
-"""
+## Solution
+```
 from Crypto.Util.number import long_to_bytes
 
 # Decrypt my super sick RSA:
@@ -18,5 +19,6 @@ phi = (p - 1) * (q - 1)    # calculates the Euler Totient
 d = pow(e,-1,n)
 m = pow(c,d,n)
 print(long_to_bytes(m))
+```
 
-#FLAG: picoCTF{sma11_N_n0_g0od_55304594}
+FLAG: picoCTF{sma11_N_n0_g0od_55304594}

@@ -1,10 +1,10 @@
-
-Description:
+# Easy1
+## Description
 
 The one time pad can be cryptographically secure, but not when you know the key.
 Can you solve this? We've given you the encrypted flag, key, and a table to help UFJKXQZQUNB with the key of SOLVECRYPTO.
 Can you use this table to solve it?.
-
+## Solution
 
 values:
 - UFJKXQZQUNB
@@ -17,4 +17,4 @@ To solve this, use same index of the values as pairs e.g. {S,U}, {O,F} and think
 ![image](https://github.com/Selwynuy/PicoCTF/assets/107299589/ebdad1d9-a2ae-4912-9b8c-5f2d3f385bcd)
 
 
-#FLAG: picoCTF{CRYPTOISFUN}
+FLAG: picoCTF{CRYPTOISFUN}
